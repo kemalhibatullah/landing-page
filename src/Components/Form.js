@@ -14,32 +14,47 @@ class Form extends Component {
                         Fill out the form at below to get your copy of “Integrated Marketing Essentials.”
                     </h2>
                 </div>
-                <form className="pb-10">
-                    <p className="text-white pb-6 text-xl">Name</p>
+                <form className="pb-10" id="form">
+                    <div className="pb-6 flex flex-row">
+                        <p className="text-white text-xl">Name</p>
+                        <p class="text-red-500 text-xs italic">*</p>
+                    </div>
                     <input
                         type='text'
                         placeholder="ex. John Doe"
                         className="h-16 w-form rounded px-3 form-color form-border-color mb-7 text-white outline-none"
+                        required
                     />
-                    <p className="text-white pb-6 text-xl">Business email</p>
+                    <div className="pb-6 flex flex-row">
+                        <p className="text-white text-xl">Business email</p>
+                        <p class="text-red-500 text-xs italic">*</p>
+                    </div>
                     <input
                         type='text'
                         placeholder="ex. johndoe@brookerhub.com"
                         className="h-16 w-form rounded px-3 form-color form-border-color mb-7 text-white outline-none"
+                        required
                     />
-                    <p className="text-white pb-6 text-xl">Company name</p>
+                    <div className="pb-6 flex flex-row">
+                        <p className="text-white text-xl">Company name</p>
+                        <p class="text-red-500 text-xs italic">*</p>
+                    </div>
                     <input
                         type='text'
                         placeholder="ex. Brooker Hub"
+                        id="company"
                         className="h-16 w-form rounded px-3 form-color form-border-color text-white outline-none"
+                        required
                     />
+                    <div className="mt-10">
+                        <input
+                            className="px-10 cursor-pointer py-3 text-lg inline-block flex-none button-bg transition rounded font-bold duration-200"
+                            type="submit"
+                            for="form"
+                            value="SUBMIT"
+                        />
+                    </div>
                 </form>
-                <div className="mb-64">
-                    <a
-                        href="#category-shop"
-                        className="px-10 py-3 text-lg inline-block flex-none button-bg transition rounded font-bold duration-200"
-                    >SUBMIT</a>
-                </div>
             </section>
         )
     }

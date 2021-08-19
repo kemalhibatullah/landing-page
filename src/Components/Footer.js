@@ -50,7 +50,7 @@ export default function Footer() {
                 <div className="flex flex-col mt-5 md:mt-10 text-white">
                     <Link className="py-2">Documentations</Link>
                     <Link className="py-2">License</Link>
-                    <Link className="py-2">Blog</Link>
+                    <Link className="py-2">Changelog</Link>
                 </div>
             </div>
         </section>

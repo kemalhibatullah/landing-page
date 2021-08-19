@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { HiChevronDown } from 'react-icons/hi'
+import Dropdown from './Dropdown'
 
 
 export default function Header() {
@@ -26,21 +26,8 @@ export default function Header() {
                         <Link to="/" className="text-xl text-white">
                             Social Trade
                         </Link>
-                        <Link to="/" className="text-xl text-white inline-flex">
-                            Broker List<HiChevronDown className="mt-1 ml-1 h-5 w-5" />
-                        </Link>
+                        <Dropdown/>
 
-                        {/* <div className="menu">
-                            <Link to="/" className="text-xl text-white">
-                                Menu 1
-                            </Link>
-                            <Link to="/" className="text-xl text-white">
-                                Menu 2
-                            </Link>
-                            <Link to="/" className="text-xl text-white">
-                                Menu 3
-                            </Link>
-                        </div> */}
                     </nav>
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                         <Link to="/" className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-7 py-2 rounded border border-transparent shadow-sm text-lg font-medium text-white button-bg">
@@ -73,9 +60,7 @@ export default function Header() {
                                 <Link to="/" className="-m-3 p-3 flex items-center text-white rounded-md hover:bg-white hover:text-green-500">
                                     Social Trade
                                 </Link>
-                                <Link to="/" className="-m-3 p-3 flex items-center text-white rounded-md hover:bg-white hover:text-green-500">
-                                    Broker List<HiChevronDown className="mt-1 ml-1 h-5 w-5" />
-                                </Link>
+                                <Dropdown/>
                             </nav>
                         </div>
                     </div>
