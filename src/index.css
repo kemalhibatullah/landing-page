@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #21242D;
+}
+
+.button-bg{
+  background-color: #1EC74F;
+}
+.button-dark{
+  background-color: #21242D;
+}
+.text-button{
+  color: #1EC74F;
+}
+.text-color{
+  color: #21242D;
+}
+.border-circle-green{
+  border: 1px solid #1EC74F;
+}
+.form-color{
+  background-color: #FFFFFF0F;
+}
+.form-border-color{
+  border: 1px solid #757F89;
+}
+.w-form{
+  width: 860px;
+}
+.footer-color{
+  background-color: #222328;
+}
+
+@media only screen and (max-width: 960px) {
+  .w-form{
+    width: 260px;
+  }
 }
